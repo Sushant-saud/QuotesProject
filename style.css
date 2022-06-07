@@ -1,0 +1,124 @@
+body{
+    background: #222f3e;
+}
+.container{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width:50vw;
+    height:70vh;
+    background:rgb(138, 138, 159);
+    border-radius:5px;
+    font-family: 'Dancing Script', cursive;
+    overflow: hidden;
+    color:#797d7f;
+    letter-spacing: 0.5px;
+    display:grid;
+    place-items: center;
+}
+.inner{
+    position:absolute;
+    height:100%;
+    width:100%;
+    opacity:1;
+    transform: 1s;
+ -webkit-transform: 1s;
+
+}
+.box{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width:80%;
+    height:80%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 1.5rem rgba(0,0,0,0.5);
+}
+.number::before{
+    content:" ";
+    position: absolute;
+    top:-130px;
+    right:-30px;
+    width:90px;
+    height:200px;
+    background-color:rgba(170, 139, 139, 0.301);
+    transform: rotate(-45deg);
+    z-index:-1;
+    box-shadow: 0 0 0.7rem rgba(0,0,0,0.5);
+}
+.number{
+    position:absolute;
+    margin:0;
+    top:15px;
+    right:15px;
+    color:rgba(255,255,255,0.7);
+}
+.number img{
+    width:40px;
+    height:40px;
+    position:absolute;
+    left:-25px;
+    top:-8px;
+    cursor:poiner;
+    animation:rot 1s linear;
+}
+.number:hover img{
+    animation:rot 1s linear;
+}
+@keyframes rot{
+    from{
+        transform: (rotate(0deg));
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.quote{
+     position:absolute;
+     top:40%;
+     left:50%;
+     transform: translate(-50%,-50%);
+     width:80%;
+     font-size:1.5rem;
+     font-weight: 900;
+}
+.author{
+    position:absolute;
+      top:80%;
+      right:40px;
+     width:80%;
+     font-size:1.4rem;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     font-weight: bolder; 
+     padding:5px;
+     margin-right: 10px;
+}
+.newQ{
+    position:absolute;
+    top:60%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+    border:1px solid gray;
+    padding:10px;
+    border-radius:10px;
+    cursor: pointer;
+    outline: none;
+    font-size:1.2rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    transition: all 1s linear;
+}
+.newQ:hover{
+    background:gray;
+    color:white;
+}
+.fa-solid{
+    position:absolute;
+    top:30%;
+    left:10%;
+    font-weight: 900;
+    font-size: 1.4rem;
+}
